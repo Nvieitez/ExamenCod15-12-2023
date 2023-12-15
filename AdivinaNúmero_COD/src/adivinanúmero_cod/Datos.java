@@ -179,7 +179,43 @@ public class Datos {
         return RondaActual;
     }   
     
-// Métodos de acceso
+// Métodos 
+    
+    /**
+     * Cambia la puntuación establecida
+     */
+    double NuevaPuntuación;
+    
+    /**
+     * Hace que se muestre la nueva puntuación
+     * @param P Puntuación: Puntuación máxima de un jugador
+     * @param Np NuevaPuntuación: Nueva mejor puntuación
+     * @return NuevaPuntuación
+     */
+    public double CambioDePuntuación(double P, double Np){
+        Puntuación = P;
+        NuevaPuntuación = Np;
+        Puntuación = NuevaPuntuación;
+        return NuevaPuntuación;
+    }
+    
+    /**
+     * Cambia el Alias establecido
+     */
+    String NuevoAlias;
+    
+    /**
+     * Cambia el alias establecido
+     * @param A Alias: El nombre del jugador establecido
+     * @param Na NuevoAlias: Nuevo nombre de jugador
+     * @return NuevoAlias
+     */
+    public String CambioDeAlias (String A, String Na){
+        Alias = A;
+        NuevoAlias = Na;
+        Alias = NuevoAlias;
+        return NuevoAlias;
+    }
     
     
 }
